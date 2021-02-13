@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+	background-image: linear-gradient(to right, #FFAB58, black);
+	font-family: cambria;
+	font-size: 20px;
+}
+
+.panelContainer {
+	height: 45vw;
+}
+
+#title {
+	font-family: lucida cansole;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+#content {
+	font-family: georgia, monospace;
+	font-size: 30px;
+	text-align: justify;
+}
+
+#simpleText {
+	font-family: garamond;
+	font-size: 2vw;
+}
+
+
+						/*PANEL, GREETING, GROUP NAME*/
+	
+/* ROW 1 BACKGROUND IMAGE */
+#panelImg {
+	background-image: url("../images/homepage_panel.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.row1-section1 {
+	width: 25%;
+	float: left;
+}
+
+.row1-section2 {
+	width: 66.66%;
+	float: right;
+	background: rgba(254, 249, 249, 0.4);
+	height: 100%;
+}
+
+#panelText {
+	font-family: Monaco;
+	font-size: 3vw;
+	float: right;
+	padding-right: 20%;
+	background: -webkit-linear-gradient(#FFAB58, black);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	border-bottom: 1px solid black;
+}
+
+#panelMainText
+{
+	font-family: garamond;
+	font-size: 9vw;
+	font-weight: bold;
+	background: -webkit-linear-gradient(black, #FFAB58);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	text-shadow: 2px 2px orange;
+	border-bottom: 1px solid #FFAB58;
+}
+
+.hide {
+  display: none;
+}
+    
+.myHeader:hover + .hide {
+  display: block;
+  color: red;
+}
+
+							/* ABOUT HENG:GARAE */
+
+.row2-section1-title {
+	padding: 5% 25% 5% 25%;
+}
+
+/* to change the background of the title <div> on hover*/
+.row2-section1-title:hover {
+	background-image: linear-gradient(to right, black, #FFAB58);
+}
+
+.row2-section1-content {	
+	padding: 2% 16.66% 0% 16.66%;
+	overflow: auto;
+}
+
+							/* ADDRESS */
+
+address {
+	float: right;
+	
+	font-family: Monaco;
+	font-size: 2vw;
+	color: white;
+}
+
+.row4 p {
+	color: white;
+	margin: 10px;
+	display: inline-block;
+}
+
+.row4 {
+	padding: 5% 25% 5% 25%;
+	background: black;
+	height: 30vw;
+}
+
+
+/* IMAGE COLUMNS */
+
+/* implementing flexbox to align the images and distribut the size with the container */
+.row {
+  display: -ms-flexbox; 	/* to work with IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;		/* IE10 */
+  flex-wrap: wrap;			/* to make the flexible items wrap if necessary */
+  padding: 0 4px;			/* top, left padding */
+}
+
+/* to create two equal columns side by side */
+.columnAddr {
+  -ms-flex: 50%;		 /* IE10 */
+  flex: 50%;			/* size of each column */
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+/* properties of <img> in class column */
+.columnAddr img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	opacity: 0.8;
+	padding: 1px;
+	margin-bottom: 16px;
+}
+
+/* properties of <img> in class column on hover */
+
+/* Responsive layout: makes a two column-layout instead of three columns */
+@media screen and (max-width: 800px) {
+  .columnAddr {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout: makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnAddr {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+							/* IMAGE COLUMNS */
+
+.row {
+  display: -ms-flexbox; 	/* to work with IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;		/* IE10 */
+  flex-wrap: wrap;			/* to make the flexible items wrap if necessary */
+  padding: 0 4px;			/* top, left padding */
+}
+
+/* to create four equal columns side by side */
+.column {
+  -ms-flex: 25%;		 /* IE10 */
+  flex: 25%;			/* size of each column */
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+/* properties of <img> in class column */
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	opacity: 0.8;
+	padding: 1px;
+	margin-bottom: 16px;
+}
+
+/* properties of <img> in class column on hover */
+.column img:hover {
+	opacity: 1.0;
+	padding: 0px;
+}
+
+/* Responsive layout: makes a two column-layout instead of three columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout: makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* CARD USED FOR IMAGES */
+								
+/* shadow appears to left and bottom of the card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin: 8px;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+/* after every class conatiner element, and class row element */
+.container::after, .row::after {
+  content: "";		/* used to insert "" */
+  clear: both;		/* floating elements are not allowed on both, left and right, sides */
+  display: table;	/* makes the element behave like a <table> element */
+}
+
+	
+

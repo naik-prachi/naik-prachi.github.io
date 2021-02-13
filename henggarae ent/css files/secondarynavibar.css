@@ -1,0 +1,46 @@
+
+.secondarynavibar {
+	overflow: hidden;
+	font-family: copperplate;
+	background: rgba(254, 249, 249, 0.5);
+	bottom: 0;
+	width: 100%;
+	padding-left: 33.33%;
+}
+
+/* Change the color of links on hover */
+.secondarynavibar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.secondarynavibar a.active {
+  border-bottom: 3px solid; 
+}
+
+.secondarynavibar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.secondarynavibar li {
+  float: left;
+}
+
+.secondarynavibar li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+li a:hover {
+  background-color: #ddd;
+  font-size: 1.8vw;
+}

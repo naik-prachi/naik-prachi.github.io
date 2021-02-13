@@ -1,0 +1,110 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+	background-image: linear-gradient(to right, #F7CAC9, #91A8D0, #101820, #8A2A2B, #F2C763, black, #FFFE26, #F7786B, #99DEDF);
+	font-family: cambria;
+	margin: 0;
+}
+
+.panelContainer {
+	height: 45vw;
+}
+
+
+#title {
+	font-family: garamond;
+	font-size: 9vw;
+	font-weight: bold;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: WHITE;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+#subTitle {
+	font-family: lucida cansole;
+	font-size: 2vw;
+	text-align: center;
+	color: white;
+}
+
+#panelImg {
+	background-image: url("../images/artistgallery/panel_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+				/* PANEL */
+.row1-section1
+{
+	width: 25%;
+	float: left;
+}
+
+.row1-section2
+{
+	width: 66.66%;
+	float: right;
+	padding-top: 7%;
+	background: rgba(254, 249, 249, 0.4);
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	opacity: 0.8;
+	padding: 2px;
+}
+
+.column img:hover {
+	opacity: 1.0;
+	padding: 0px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.hide {
+  display: none;
+}
+    
+.myHeader:hover + .hide {
+  display: block;
+}

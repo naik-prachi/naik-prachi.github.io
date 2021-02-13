@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta lang="en">
+		<title>CONTACT US</title>
+		
+		<meta charset="utf-8">
+		<meta name="author" content="Heng:garæ Entertainment">
+		<meta http-equiv="refresh" content="30">
+		<meta name="keywords" content="henggarae, entertainment, audition, henggarae contact"> 
+		<meta name="description" content="contact details">
+		<meta name="viewport" content="width= deive-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="css files/navigationbar.css">
+		<link rel="stylesheet" type="text/css" href="css files/contact_us.css">
+		<link rel="stylesheet" type="text/css" href="css files/socialMediaButtons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+	
+		
+		<!-- navigation bar begins -->
+			<nav class="navbar">
+				<ul>
+					<li><a href="#">Heng:garæ</a> || </li>
+					<li><a href="home_page.html">HOME</a></li>
+					<li><a href="about_us.html">ABOUT US</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">ARTISTS</a>
+							<div class="dropdown-content">
+							  <a href="seventeen.html">SEVENTEEN</a>
+							  <a href="dreamcatcher.html">DREAMCATCHER</a>
+							  <a href="stray_kids.html">STRAY KIDS</a>
+							  <a href="pristin.html">PRISTIN</a>
+							</div>
+					</li>
+					<li><a href="artist_gallery.html">GALLERY</a></li>
+					<li><a href="contact_us.html" class="active">CONTACT</a></li>
+				</ul>				
+			</nav>
+		<!-- navigation bar ends -->
+
+			<div >
+				<div class="row">
+				<!-- COLUMN 1 -->
+				    <div class="col-4 col-s-4 details" class="panelContainer" id="panelImg-contactUs" class="panels">
+						<h4 id="title">Contact Us!</h4>
+						<ul id="subText">
+						  <li>TEL: 02-548-1677</li>
+						  <li>FAX: 02-548-1671</li>
+						  <li>MAIL: henggaraeent@gmail.com</li>
+						</ul>
+					</div>
+				  
+				<!-- COLUMN 2 -->  
+					<div class="col-4 col-s-8" class="panelContainer" id="panelImg-ourSocials">
+						<h4 id="title">Our Socials!</h4>						
+						<table>
+							<tr>
+								<td id="simpleText">SEVENTEEN:</th>
+								<td><a href="https://twitter.com/pledis_17" class="fa fa-twitter" ></a></th>
+								<td><a href="https://www.youtube.com/channel/UCfkXDY7vwkcJ8ddFGz8KusA" class="fa fa-youtube"></a></th>
+								<td><a href="https://www.instagram.com/saythename_17/" class="fa fa-instagram"></a></th>
+							 </tr>
+							<tr>
+								<td id="simpleText">DREAMCATCHER:</td>
+								<td><a href="https://twitter.com/hf_dreamcatcher" class="fa fa-twitter"></a></td>
+								<td><a href="https://www.youtube.com/channel/UCijULR2sXLutCRBtW3_WEfA" class="fa fa-youtube"></a></td>
+								<td><a href="https://www.instagram.com/hf_dreamcatcher/" class="fa fa-instagram"></a></td>
+							</tr>
+							<tr>
+								<td id="simpleText">STRAY KIDS:</td>
+								<td><a href="https://twitter.com/Stray_Kids" class="fa fa-twitter"></a></td>
+								<td><a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa fa-youtube"></a></td>
+								<td><a href="https://www.instagram.com/realstraykids/" class="fa fa-instagram"></a></td>
+							</tr>
+							<tr>
+								<td id="simpleText">PRISTIN:</td>
+								<td><a href="https://twitter.com/search?q=pristin&src=typeahead_click" class="fa fa-twitter"></a></td>
+								<td><a href="https://www.youtube.com/channel/UCRvGVXlK9h9vLWpbVOzm_4Q" class="fa fa-youtube"></a></td>
+								<td><a href="https://www.instagram.com/pristin.gg/" class="fa fa-instagram"></a></td>
+							</tr>
+						</table>
+					</div>
+				
+				<!-- COLUMN 3 -->
+					<div class="col-4 col-s-12" class="panelContainer" id="panelImg-joinFam">
+						<h4 id="title">Join Heng:garæ Family!</h4>
+						<div class="aside">
+						
+							<p id="subText"><br>Join the Heng:garæ family and stay in touch with us by subscribing down below!</p>
+						<!-- Form begins -->
+							<form method="post">
+								<div>									
+									<center>					
+										<input type="text" id='txtEmail' class="frmip" placeholder="Enter email to subscribe!" name="email">
+										<br><br><br>
+										<button type="submit" class="frmip" name="submit" onclick='Javascript:checkEmail();'>Submit</button>
+									</center>
+								</div>
+							</form>
+						<!-- FORM ENDS -->
+						</div>
+					</div>				  
+			</div>		
+		</div>
+		
+	<!-- JAVASCRIPT -->
+		<script>
+		
+		<!-- EMAIL VALIDATION -->
+			function checkEmail() {
+
+				var email = document.getElementById('txtEmail');
+				var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+				if (!filter.test(email.value)) {
+					alert('Please provide a valid email address');
+					email.focus;
+					return false;
+				}
+			}
+		</script>
+
+	</body>	
+</html>

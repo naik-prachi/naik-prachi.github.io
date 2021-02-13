@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+	background-image: linear-gradient(to left, #A0C2CB, #003078);
+	font-family: cambria;
+	font-size: 20px;
+}
+
+.panelContainer {
+	height: 45vw;
+}
+
+#content {
+	font-family: Garamond;
+	font-size: 28px;
+	text-align: justify;
+	color: white;
+}
+
+
+						/*PANEL, GREETING, GROUP NAME*/
+	
+/* ROW 1 BACKGROUND IMAGE */
+#panelImg {
+	background-image: url("../images/about us/panel_aboutus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.row1-section1 {
+	width: 25%;
+	float: left;
+}
+
+.row1-section2 {
+	width: 66.66%;
+	float: right;
+	padding-top: 10%;
+	background: rgba(254, 249, 249, 0.4);
+	height: 100%;
+}
+
+#panelText {
+	font-family: Monaco;
+	font-size: 3vw;
+	float: right;
+	padding-right: 20%;
+	background: -webkit-linear-gradient(#A0C2CB, #003078);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	border-bottom: 1px solid #003078;
+}
+
+#panelmainText
+{
+	font-family: garamond;
+	font-size: 8vw;
+	font-weight: bold;
+	color: #A0C2CB;
+	-webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+	border-bottom: 1px solid #A0C2CB;
+}
+
+						/* ABOUT US IMAGES */
+#abtUsImg {
+	height: 100%;
+	width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+						/*COLIUMN ARRANGEMENST*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+						/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+						/* For tablets: */
+@media only screen and (min-width: 600px) {						
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+						/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
